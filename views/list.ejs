@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="box" id="heading">
+        <h1><%= dayToday %></h1>
+    </div>
+
+    <div class="box">
+        <% for (var i=0;i<newListItems.length;i++){ %>
+            <% if(newListItems[i]!=""){ %> 
+                <div class="item">
+                    <input type="checkbox">
+                    <p><%= newListItems[i] %> </p>
+                </div>
+            
+            <% } %>
+        <% } %>
+        <form class="" action="/" method="post">
+
+            <input type="text" name="newItem" placeholder="Add new task" autocomplete="off">
+            <button class ="btn-submit" type="submit" name="button">+</button>
+        </form>
+        <form class="align-center" action="/clear" method="post">
+            <button class ="btn-clear" type="submit" name="button">Clear</button>
+        </form>
+    </div>
+    <footer>
+        Made by Gurujeet Shetty.
+    </footer>
+</body>
+</html>
