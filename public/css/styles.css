@@ -1,8 +1,7 @@
 
 .btn-submit{  
-    min-height: 3rem;
-    width: 3rem;
-    border-radius: 5%;
+    min-height: 60%;
+    width: 80%;
     border-color: transparent;
     background-color: #A683E3;
     color: #fff;
@@ -10,6 +9,7 @@
     padding-bottom: 0.5rem;
     border-width: 0;
     margin-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
 }
 .btn-clear{
     min-height: 60%;
@@ -21,7 +21,7 @@
     padding-bottom: 0.5rem;
     border-width: 0;
     margin-bottom: 2rem;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
 }
 
 html {
