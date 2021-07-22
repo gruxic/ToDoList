@@ -1,7 +1,8 @@
 
 .btn-submit{  
-    min-height: 60%;
-    width: 80%;
+    min-height: 3rem;
+    width: 5rem;
+    border-radius: 5%;
     border-color: transparent;
     background-color: #A683E3;
     color: #fff;
@@ -9,7 +10,6 @@
     padding-bottom: 0.5rem;
     border-width: 0;
     margin-bottom: 2rem;
-    font-family: 'Raleway', sans-serif;
 }
 .btn-clear{
     min-height: 60%;
@@ -21,12 +21,11 @@
     padding-bottom: 0.5rem;
     border-width: 0;
     margin-bottom: 2rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;;
 }
 
-html {
+body {
     background-color: #E4E9FD;
-    min-height: 1000px;
     font-family: 'Open Sans', sans-serif;
   }
   
@@ -103,7 +102,8 @@ input[type="text"] {
     background: transparent;
     font-size: 2rem;
     font-weight: 200;
-    width: 70%;
+    width: 12rem;
+    margin-right: 0.5rem;
 }
   
 input[type="text"]:focus {
@@ -115,14 +115,24 @@ input[type="text"]:focus {
     color: grey;
     opacity: 1;
 }
-  
 footer {
     color: white;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    
+    font-size: 1.5rem;   
+}
+.footer-icons{
+  text-align: center;
+  padding: 5% 0 0 0;
+}
+.social-icon{
+  margin: 2.5% 2.5% 2.5% 2.5%;
+  
+  display: inline;
+  text-decoration: none;
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
 }
 @media(max-width: 768px){
     .box
@@ -144,5 +154,8 @@ footer {
         display: flex;
         align-items: center;
         border-bottom: 0.2rem solid #F1F1F1;
+    }
+    .p{
+        font-size: 0.5rem;
     }
 }
